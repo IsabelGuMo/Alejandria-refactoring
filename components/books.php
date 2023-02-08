@@ -1,9 +1,9 @@
 <?php
     //for MAC
-    require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
+    //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
 
     //for Windows: 
-// require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php");
+ require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php");
 $connect = new Database();
 ?>
 

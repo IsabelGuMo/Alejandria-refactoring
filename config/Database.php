@@ -4,8 +4,8 @@ class Database {
    protected $dbname = 'alejandria';
    protected $servername = 'localhost';
    protected $username = "root";
-   // protected $password = "";
-   protected $password = "root";
+    protected $password = "";
+   //protected $password = "root";
    protected $DB = null;
 
    public function __construct()
