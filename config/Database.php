@@ -1,18 +1,18 @@
 <?php
 
 class Database {
-   protected $dbname = 'PDO';
+   protected $dbname = 'alejandria';
    protected $servername = 'localhost';
    protected $username = "root";
    // protected $password = "";
    protected $password = "root";
    protected $DB = null;
 
-   public function connection()
+   public function __construct()
    {
     try
     {
-        $this->DB = new PDO("mysql:host=".$this->servername.";dbname=".$this->dbname."", $this->username, $this->password);
+        $this->DB = new PDO("mysql:host=".$this->servername.";dbname=".$this->dbname, $this->username, $this->password);
     } 
 catch(PDOException $e)
     {
@@ -27,9 +27,9 @@ catch(PDOException $e)
     //        echo $th;
     //    }
 
-   public function query()
+   public function query($query)
         {
-        return $this->DB->query('SELECT * FROM alejandria WHERE isbn');
+        return $this->DB->query($query);
         }
 }
 

@@ -10,10 +10,10 @@ $connect = new Database();
 <main class="product-list">
      <?php
            $result = $connect->query("SELECT * FROM alejandria");
+           $rows = $result->fetchAll()
       ?>
         
-       <?php while($book = $result->fetch_assoc()): 
-        
+       <?php foreach($rows as $book): 
         ?>
 
         <div class="card card-position" style="width: 18rem; margin-top: 2.5rem;">
@@ -35,6 +35,6 @@ $connect = new Database();
                 </a>
             </div>
         </div>
-        <?php endwhile; ?>
+        <?php endforeach; ?>
         
     </main>
