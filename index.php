@@ -1,5 +1,6 @@
 <?php
-include_once('c://xampp/htdocs/Alejandria-refactoring/config/Database.php');
+// include_once('c://xampp/htdocs/Alejandria-refactoring/config/Database.php');
+include_once('/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +17,14 @@ include_once('c://xampp/htdocs/Alejandria-refactoring/config/Database.php');
 
 <body>
    <!-- WINDOWS -->
-  <?php include ("c:/xampp/htdocs/Alejandria-refactoring/components/navbar.php") ?>  
-  <?php include ("c:/xampp/htdocs/Alejandria-refactoring/view/main.php") ?>
+  <?php // include ("c:/xampp/htdocs/Alejandria-refactoring/components/navbar.php") ?>  
+  <?php // include ("c:/xampp/htdocs/Alejandria-refactoring/view/main.php") ?>
  
 
   <!-- MAC -->
-  <?php //include ("/Applications/MAMP/htdocs/BookWormNew/components/header.php") ?>
+  <?php include ("/Applications/MAMP/htdocs/Alejandria-refactoring/components/navbar.php") ?>
+  <?php include ("/Applications/MAMP/htdocs/Alejandria-refactoring/components/books.php") ?>
+  <?php // include ("/Applications/MAMP/htdocs/Alejandria-refactoring/view/main.php") ?>
 
 
 </body>

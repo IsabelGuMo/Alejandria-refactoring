@@ -1,9 +1,11 @@
 <?php
 //for MAC
-//require_once("/Applications/MAMP/htdocs//Alejandria-refactoring/controller/MemberController.php");
+require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/controller/BookController.php");
+require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
+
 //for Windows: 
-require_once("c:/xampp/htdocs/Alejandria-refactoring/controller/BookController.php");
-require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php");
+// require_once("c:/xampp/htdocs/Alejandria-refactoring/controller/BookController.php");
+// require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php");
 $controller = new BookController();
 $connect = new Database();
 $result = $controller->getBooks();
