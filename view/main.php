@@ -2,12 +2,12 @@
 //for MAC
 //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/controller/BookController.php");
 //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
-require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/controller/BookController.php");
-require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/config/Database.php");
+//require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/controller/BookController.php");
+//require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/config/Database.php");
 
 //for Windows: 
- /* require_once("c:/xampp/htdocs/Alejandria-refactoring/controller/BookController.php");
- require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php"); */
+  require_once("c:/xampp/htdocs/Alejandria-refactoring/controller/BookController.php");
+  require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php"); 
 $controller = new BookController();
 $connect = new Database();
 $result = $controller->getBooks();

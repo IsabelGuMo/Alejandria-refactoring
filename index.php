@@ -1,7 +1,7 @@
 <?php
- //include_once('c://xampp/htdocs/Alejandria-refactoring/config/Database.php');
+ include_once('c://xampp/htdocs/Alejandria-refactoring/config/Database.php');
 //include_once('/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php');
-require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/config/Database.php");
+//require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/config/Database.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,18 +18,18 @@ require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring
 
 <body>
    <!-- WINDOWS -->
-  <?php  //include ("c:/xampp/htdocs/Alejandria-refactoring/components/navbar.php") ?>  
-  <?php // include ("c:/xampp/htdocs/Alejandria-refactoring/view/main.php") ?>
-  <?php  //include ("c:/xampp/htdocs/Alejandria-refactoring/components/books.php") ?>
+  <?php  include ("c:/xampp/htdocs/Alejandria-refactoring/components/navbar.php") ?>  
+  <?php  include ("c:/xampp/htdocs/Alejandria-refactoring/view/main.php") ?>
+  <?php  include ("c:/xampp/htdocs/Alejandria-refactoring/components/books.php") ?>
 
   <!-- MAC -->
   <?php //include ("/Applications/MAMP/htdocs/Alejandria-refactoring/components/navbar.php") ?>
   <?php //include ("/Applications/MAMP/htdocs/Alejandria-refactoring/components/books.php") ?>
   <?php // include ("/Applications/MAMP/htdocs/Alejandria-refactoring/view/main.php") ?>
 
-  <?php include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/components/navbar.php") ?>
-  <?php include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/components/books.php") ?>
-  <?php include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/view/main.php") ?>
+  <?php //include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/components/navbar.php") ?>
+  <?php //include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/components/books.php") ?>
+  <?php //include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/view/main.php") ?>
 
 
 </body>
