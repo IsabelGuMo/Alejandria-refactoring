@@ -1,5 +1,10 @@
 <?php
-require_once("conect.php");
+         //WINDOWS
+        // require_once("C:/xampp/htdocs/Alejandria-refactoring/config/Database.php");
+        
+        // MAC
+        //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
+        require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/config/Database.php");
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(!empty($_POST['current-isbn'])) {
