@@ -1,23 +1,24 @@
 <?php
 
 class Database {
-   protected $dbname = 'alejandria';
-   protected $servername = 'localhost';
-   protected $username = "root";
-    protected $password = "";
-   //protected $password = "root";
-   protected $DB = null;
+    private $dbname = 'alejandria';
+    private $servername = 'localhost';
+    private $username = "root";
+    private $password = "";
+    //protected $password = "root";
+   
 
-   public function __construct()
+    public function connection()
    {
     try
     {
-        $this->DB = new PDO("mysql:host=".$this->servername.";dbname=".$this->dbname, $this->username, $this->password);
+        $db = new mysqli($this->servername,$this->username, $this->password, $this->dbname);
+        return $db;
     } 
-catch(PDOException $e)
-    {
-    echo $e->getMessage();
-    }
+    catch(Throwable $e)
+        {
+        var_dump($e);
+        }
 }
 
     //    try {
@@ -27,10 +28,6 @@ catch(PDOException $e)
     //        echo $th;
     //    }
 
-   public function query($query)
-        {
-        return $this->DB->query($query);
-        }
 }
 
 ?>

@@ -22,5 +22,5 @@ class BookModel
         
         $query = $this->connect->query('SELECT * FROM alejandria');
         return $query->fetch_all(MYSQLI_ASSOC); 
-    }
+    } 
 }

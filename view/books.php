@@ -1,20 +1,21 @@
 <?php
     //for MAC
     //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
-    require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/config/Database.php");
+    require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/controller/BookController.php");
 
     //for Windows: 
  //require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php");
-$connect = new Database();
+$connect = new BookController();
+$result = $controller->getBooks();
+var_dump($result);
 ?>
 
-<main class="product-list">
+<!-- <main class="product-list">
      <?php
-           $result = $connect->query("SELECT * FROM alejandria");
-           $rows = $result->fetchAll()
+           if($result): 
       ?>
         
-       <?php foreach($rows as $book): 
+       <?php foreach($result as $book): 
         ?>
 
         <div class="card card-position" style="width: 18rem; margin-top: 2.5rem;">
@@ -37,5 +38,6 @@ $connect = new Database();
             </div>
         </div>
         <?php endforeach; ?>
+        <?php endif; ?>
         
-    </main>
+    </main> -->

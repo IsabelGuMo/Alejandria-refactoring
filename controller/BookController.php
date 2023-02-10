@@ -2,7 +2,7 @@
 
 class BookController
 {
-    public $model;
+    private $model;
 
     public function __construct()
     {   
@@ -18,7 +18,5 @@ class BookController
     public function getBooks()
     {
         return ($this->model->getBooks() ? $this->model->getBooks() : "there is no books");
-
     }
 }
- 

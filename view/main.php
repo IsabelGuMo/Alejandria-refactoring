@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 //for MAC
 //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/controller/BookController.php");
 //require_once("/Applications/MAMP/htdocs/Alejandria-refactoring/config/Database.php");
@@ -8,31 +8,21 @@ require_once("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring
 //for Windows: 
  /* require_once("c:/xampp/htdocs/Alejandria-refactoring/controller/BookController.php");
  require_once("c:/xampp/htdocs/Alejandria-refactoring/config/Database.php"); */
-$controller = new BookController();
-$connect = new Database();
+ $connect = new Database();
+/* $connect = new Database(); */
 $result = $controller->getBooks();
 // var_dump($result);
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
-</head>
-<body>
-
     <main class="product-list">
-     <?php
+    
+    <?php
            $result = $connect->query("SELECT * FROM alejandria");
+           $rows = $result->fetchAll()
       ?>
-        
-       <?php while($book = $result->fetch_assoc()): 
-        
+       <?php 
+        foreach($rows as $book):  
         ?>
-
+    
         <div class="card card-position" style="width: 18rem; margin-top: 2.5rem;">
         <?php if (isset($book['img']) && !empty($book['img']) && file_exists('assets/images/' . $book['img'])): ?>
             <img src="assets/images/<?php echo $book['img']; ?>" class="card-img-top" alt="<?php echo $book['titulo']; ?>">
@@ -52,8 +42,6 @@ $result = $controller->getBooks();
                 </a>
             </div>
         </div>
-        <?php endwhile; ?>
-        
-    </main>
-</body>
-</html>
+        <?php endforeach; ?>  
+
+</main> -->
