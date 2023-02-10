@@ -18,8 +18,9 @@ $books = $controller->getBooks();
 </head>
 <?php include ("/Applications/XAMPP/xamppfiles/htdocs/F5PHP/alejandria-refactoring/view/navbar.php"); ?>
 <body>
+<main class="product-list">
     <?php foreach($books as $book): ?>
-        <main class="product-list">
+        
         <div class="card card-position" style="width: 18rem; margin-top: 2.5rem;">
         <?php if (isset($book['img']) && !empty($book['img']) && file_exists('../assets/images/' . $book['img'])): ?>
             <img src="../assets/images/<?php echo $book['img']; ?>" class="card-img-top" alt="<?php echo $book['titulo']; ?>">
@@ -34,14 +35,14 @@ $books = $controller->getBooks();
                 <a href="form.php?isbn=<?php echo $book['isbn']; ?>">
                     <i class="bi bi-pencil-square" style="font-size:30px; color:#84D2C5;"></i>
                 </a>
-                <a class= "submit" href="./delete.php?isbn=<?php echo $book['isbn']; ?>">
+                <a class= "submit" href="delete.php?isbn=<?php echo $book['isbn']; ?>">
                     <i class="bi bi-trash3" style="font-size:30px; color:#84D2C5;"></i>
                 </a>
             </div>
         </div>
-        </main>
+        
         <?php endforeach; ?>
-    
+        </main>
 </body>
 <link rel="stylesheet" href="/css/mi.css?uuid=<?php echo uniqid();?>">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

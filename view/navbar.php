@@ -1,6 +1,6 @@
 <nav class="nav-color navbar">
         <div class="icon">
-            <img src="./assets/images/faro-alejandria.png" alt="Icono faro alejandría" style="width:70px;">
+            <img src="../assets/images/faro-alejandria.png" alt="Icono faro alejandría" style="width:70px;">
         </div>
         <div class="container">
             <div class="input-group mb-3">
